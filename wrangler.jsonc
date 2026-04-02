@@ -1,20 +1,17 @@
 {
-    "account_id": "REPALCE_ME",
+    "account_id": "REPLACE_ME",
     "upload_source_maps": true,
-    "compatibility_date": "2025-08-15",
+    "compatibility_date": "2026-03-17",
     "compatibility_flags": ["nodejs_als"],
     "env": {
         "dev": {
-            "name": "REPALCE_ME",
+            "name": "ai-remote-bindings-test",
             "workers_dev": true,
             "preview_urls": true,
-            "vectorize": [
-                {
-                    "binding": "VECTORIZE",
-                    "index_name": "REPALCE_ME",
-                    "remote": true
-                }
-            ],
+            "ai": {
+                "binding": "AI",
+                "remote": true
+            },
         }
     }
 }
