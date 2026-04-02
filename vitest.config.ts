@@ -1,13 +1,11 @@
-import { defineWorkersConfig } from "@cloudflare/vitest-pool-workers/config";
+import { defineConfig } from "vitest/config";
+import { cloudflareTest } from "@cloudflare/vitest-pool-workers";
 
-export default defineWorkersConfig({
-    test: {
-        poolOptions: {
-            workers: {
-                wrangler: { configPath: "./wrangler.jsonc", environment: "dev" },
-                isolatedStorage: false,
-                remoteBindings: true,
-            }
-        }
-    }
-});
+export default defineConfig({
+    plugins: [
+        cloudflareTest({
+            wrangler: { configPath: "./wrangler.jsonc", environment: "dev" },
+            remoteBindings: true
+        })
+    ]
+})
