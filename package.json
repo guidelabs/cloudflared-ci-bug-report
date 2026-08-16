@@ -7,8 +7,8 @@
 		"test": "vitest --run --no-file-parallelism --max-workers=1"
 	},
 	"devDependencies": {
-		"@cloudflare/vitest-pool-workers": "^0.14.1",
-		"vitest": "^4.1.2",
-		"wrangler": "^4.80.0"
+		"@cloudflare/vitest-pool-workers": "^0.21.3",
+		"vitest": "^4.1.10",
+		"wrangler": "^4.123.0"
 	}
 }
